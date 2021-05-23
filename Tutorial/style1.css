@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    font-weight: 500;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 200vh;
+    background: rgb(217, 244, 255);
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container h1{
+    text-align: center;
+    font-size: 6rem;
+    padding: 5%;
+    margin: 15px;
+    z-index: 1;
+}
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+.video-color{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    opacity: 50%;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.727);
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+header.sticky{
+    padding: 5px 100px;
+}
+
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+
+header ul li a{
+    display: block;
+    margin: 0 15px;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-weight: 500px;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+    color: azure;
+}
+
+ul li a:hover{
+    color: greenyellow;
+    animation: 0.3s;
+}
+#tutorial{
+    height: 600px;
+    display: inline-block;
+    width: 100%;
+    padding-left: 5%;
+    padding-top: 5%;
+    font-size: 30px;
+    padding-right: 900px;
+}
+#tutorial2{
+    height: 400px;
+    display: inline-block;
+    width: 100%;
+    padding-right: 5%;
+    padding-top: -1%;
+    text-align: right;
+    font-size: 30px;
+    padding-left: 900px;
+}
+#tutorial3{
+    height: 400px;
+    display: inline-block;
+    width: 100%;
+    padding-left: 5%;
+    font-size: 30px;
+    padding-right: 900px;
+}
