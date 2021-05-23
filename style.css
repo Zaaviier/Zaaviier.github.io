@@ -97,20 +97,19 @@ ul li a:hover{
 }
 .about{
     padding-top: 20%;
-    height: 50%;
+    height: 100%;
     color: black;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     padding-left: 20%;
     padding-right: 20%;
     font-weight: 500;
     line-height: 1.5;
     white-space: pre-line;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    position: absolute;
+    white-space:normal;
+    overflow: hidden;
+
     
 }
 
