@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    font-weight: 500;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 200vh;
+    background: rgb(217, 244, 255);
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: rgb(250, 248, 248);
+    background-attachment: fixed;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.727);
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+header.sticky{
+    padding: 5px 100px;
+}
+
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+
+header ul li a{
+    display: block;
+    margin: 0 15px;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-weight: 500px;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+    color: azure;
+}
+
+ul li a:hover{
+    color: greenyellow;
+    animation: 0.3s;
+}
+
+.container{
+    text-align: center;
+    position: absolute;
+    margin: 0;
+    top:50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+.container p{
+    padding-top: 10px;
+}
+.about{
+    padding-top: 20%;
+    color: black;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    font-size: 25px;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-weight: 500;
+    vertical-align: baseline;
+    
+}
+
+#home{
+    transition: 0.5s;
+    height: 700px;
+    display: inline-block;
+    width: 100%;
+
+}
+#about{
+    transition: 0.5s;
+    height: 700px;
+    display: inline-block;
+    width: 100%;
+
+}
+#social{
+    transition: 0.5s;
+    height: 700px;
+    display: inline-block;
+    width: 100%;
+
+}
+.middle{
+    position: absolute;
+    top: 170%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    padding-bottom: 20px;
+  }
+.btn{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+  }
+.btn i{
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
+  }
+.btn:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+  }
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+.btn:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+  @keyframes aaa {
+    0%{
+      left: -110%;
+      top: 90%;
+    }50%{
+      left: 10%;
+      top: -30%;
+    }100%{
+      top: -10%;
+      left: -10%;
+    }
+}
+footer{
+    background-color: rgb(47, 47, 47);
+    height: 20px;
+    text-align: center;
+
+}
